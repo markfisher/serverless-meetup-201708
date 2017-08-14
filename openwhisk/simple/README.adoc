@@ -5,7 +5,9 @@
 
 ## build
 
-```gradle build```
+```
+gradle build
+```
 
 ## deploy
 
@@ -17,5 +19,7 @@
 
 ## invoke
 
-```wsk action invoke -br simple-demo -p name World``` 
+```
+wsk action invoke -br simple-demo -p name World
+``` 
 
