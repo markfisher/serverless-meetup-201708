@@ -1,0 +1,21 @@
+## prerequisites
+
+1. a Vagrant machine for OpenWhisk as described here: https://github.com/apache/incubator-openwhisk#quick-start
+2. gradle
+
+## build
+
+```gradle build```
+
+## deploy
+
+* cd to the `tools/vagrant` dir in the openwhisk repo
+* copy `build/lib/simple-1.0.jar` from the project dir
+* `vagrant ssh`
+* `cd /home/vagrant/openwhisk/tools/vagrant`
+* `wsk action create simple-demo simple-1.0.jar --main demo.Hello`
+
+## invoke
+
+```wsk action invoke -br simple-demo -p name World``` 
+
