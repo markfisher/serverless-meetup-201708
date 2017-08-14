@@ -1,0 +1,12 @@
+## Create Function Manually
+
+1. go to: https://console.aws.amazon.com/lambda/home
+2. click "Create function" in the upper right corner
+3. click "Author from scratch" then "Next"
+4. provide a name and select "Java 8" as the runtime
+5. click upload and navigate to the JAR
+6. for the handler provide: "demo.Hello::handle"
+7. choose an existing role (create if necessary)
+8. click "Next" then "Create function"
+9. click "Test" and provide a literal string value
+10. click "Save and test" and expand the details
